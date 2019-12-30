@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Karshenasi", "Karshenasi\Karshenasi.vbproj", "{988FE8AD-2796-4258-A137-AA6FDEF5924B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "KSetup", "..\..\Setup\KSetup\KSetup.vdproj", "{5EEE2504-A4B1-4619-93ED-40061801E38A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{988FE8AD-2796-4258-A137-AA6FDEF5924B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988FE8AD-2796-4258-A137-AA6FDEF5924B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988FE8AD-2796-4258-A137-AA6FDEF5924B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{988FE8AD-2796-4258-A137-AA6FDEF5924B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EEE2504-A4B1-4619-93ED-40061801E38A}.Debug|Any CPU.ActiveCfg = Debug
+		{5EEE2504-A4B1-4619-93ED-40061801E38A}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFA39177-FD7D-4999-919B-653104930732}
+	EndGlobalSection
+EndGlobal

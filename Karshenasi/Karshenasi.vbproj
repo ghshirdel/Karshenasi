@@ -1,0 +1,649 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{988FE8AD-2796-4258-A137-AA6FDEF5924B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Karshenasi.My.MyApplication</StartupObject>
+    <RootNamespace>Karshenasi</RootNamespace>
+    <AssemblyName>Karshenasi</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>h1.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>http://localhost/Karshenasi/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>fa</TargetCulture>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Karshenasi.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Karshenasi.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="Canon, Version=1.5.0.0, Culture=neutral, PublicKeyToken=cd067e66ee21d931, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WIA-Loader-dll\Canon.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Resources, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\FarsiLibrary\FarsiLibrary.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Utils, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\amval\New\FarsiLibrary\FarsiLibrary.Utils.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FarsiLibrary.Win, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\amval\FarsiLibrary\FarsiLibrary.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="GPSLibrary, Version=1.5.0.0, Culture=neutral, PublicKeyToken=cd067e66ee21d931, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WIA-Loader-dll\GPSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WIA, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd067e66ee21d931, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WIA-Loader-dll\Interop.WIA.dll</HintPath>
+    </Reference>
+    <Reference Include="LoaderAPI, Version=1.5.0.0, Culture=neutral, PublicKeyToken=cd067e66ee21d931, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WIA-Loader-dll\LoaderAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Engine" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Common.v9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools.v9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.Office.Tools.Word.v9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PersianToolS, Version=1.0.1523.21031, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PersianToolS.dll</HintPath>
+    </Reference>
+    <Reference Include="RadControlSpy, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q2 2008 SP1\bin\RadControlSpy.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Core, Version=6.202.0.40, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.DocIO.Base, Version=6.202.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.DocIO.Windows, Version=6.202.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grid.Base, Version=6.202.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Grouping.Base, Version=6.202.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Grouping.Windows, Version=6.202.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Windows, Version=6.202.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grouping.Base, Version=6.202.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Base, Version=6.202.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Windows, Version=6.202.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Base, Version=6.202.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Windows, Version=6.202.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.XlsIO.Base, Version=6.202.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.XlsIO.Web, Version=6.202.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.XlsIO.Windows, Version=6.202.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Syncfusion.Core">
+      <Name>Syncfusion.Core</Name>
+    </Reference>
+    <Reference Include="Telerik.Charting, Version=2.0.3.0, Culture=neutral, PublicKeyToken=d14f3dcc8e3e8763, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\System IT Co\KSetup\Telerik.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\..\System IT Co\KSetup\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Docking, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\System IT Co\KSetup\Telerik.WinControls.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\System IT Co\KSetup\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadChart, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\System IT Co\KSetup\Telerik.WinControls.RadChart.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\System IT Co\KSetup\Telerik.WinControls.Themes.Aqua.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\System IT Co\KSetup\Telerik.WinControls.Themes.Desert.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Miscellaneous, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\System IT Co\KSetup\Telerik.WinControls.Themes.Miscellaneous.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Black, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\System IT Co\KSetup\Telerik.WinControls.Themes.Office2007Black.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\System IT Co\KSetup\Telerik.WinControls.Themes.Office2007Silver.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Telerik, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\System IT Co\KSetup\Telerik.WinControls.Themes.Telerik.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Vista, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\System IT Co\KSetup\Telerik.WinControls.Themes.Vista.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\System IT Co\KSetup\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI.Design, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\System IT Co\KSetup\Telerik.WinControls.UI.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\System IT Co\KSetup\TelerikCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikData, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q2 2008 SP1\bin\TelerikData.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualStyleBuilder.Design, Version=7.1.1.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\System IT Co\KSetup\VisualStyleBuilder.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="WIAAPI, Version=1.5.0.0, Culture=neutral, PublicKeyToken=cd067e66ee21d931, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WIA-Loader-dll\WIAAPI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.Build.BuildEngine" />
+    <Import Include="Microsoft.Office.Core" />
+    <Import Include="Microsoft.Office.Interop.Word" />
+    <Import Include="Microsoft.Office.Tools.Word" />
+    <Import Include="Microsoft.Office.Tools.Word.Controls" />
+    <Import Include="Microsoft.Office.Tools.Word.Extensions" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="PMortara.WIALoader" />
+    <Import Include="PMortara.WIALoader.Canon" />
+    <Import Include="PMortara.WIALoader.Canon.EDSDKLib" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.ComponentModel" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="WIA" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main_Form\AddPriceKarshenasi_frm.Designer.vb">
+      <DependentUpon>AddPriceKarshenasi_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Form\AddPriceKarshenasi_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Define_BaseForm\API.vb" />
+    <Compile Include="Define_BaseForm\BankDefineFrm.Designer.vb">
+      <DependentUpon>BankDefineFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Define_BaseForm\BankDefineFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Define_BaseForm\DefKarbariFrm.Designer.vb">
+      <DependentUpon>DefKarbariFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Define_BaseForm\DefKarbariFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Define_BaseForm\Pic_Viewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Define_BaseForm\KarshenasanFrm.Designer.vb">
+      <DependentUpon>KarshenasanFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Define_BaseForm\KarshenasanFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Define_BaseForm\Netpicview.vb" />
+    <Compile Include="Define_BaseForm\VariziFrm.Designer.vb">
+      <DependentUpon>VariziFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Define_BaseForm\VariziFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form\Telphone_frm.Designer.vb">
+      <DependentUpon>Telphone_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Form\Telphone_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mali_Form\Mali_frm.Designer.vb">
+      <DependentUpon>Mali_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mali_Form\Mali_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mali_Form\Mali_Pay_frm.Designer.vb">
+      <DependentUpon>Mali_Pay_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mali_Form\Mali_Pay_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mali_Form\Remain_Kar_frm.Designer.vb">
+      <DependentUpon>Remain_Kar_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mali_Form\Remain_Kar_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Form\ListKarshenasiFrm.Designer.vb">
+      <DependentUpon>ListKarshenasiFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Form\ListKarshenasiFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form\MainFrm.Designer.vb">
+      <DependentUpon>MainFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Form\MainFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form\KarshenasiFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form\KarshenasiFrm.Designer.vb">
+      <DependentUpon>KarshenasiFrm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form\Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Picture_Form\AddPictureFrm.Designer.vb">
+      <DependentUpon>AddPictureFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Picture_Form\AddPictureFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Define_BaseForm\OstanAndShahBaseFrm.Designer.vb">
+      <DependentUpon>OstanAndShahBaseFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Define_BaseForm\OstanAndShahBaseFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Picture_Form\PictureViewerFrm.Designer.vb">
+      <DependentUpon>PictureViewerFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Picture_Form\PictureViewerFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Define_BaseForm\SazmanFrm.Designer.vb">
+      <DependentUpon>SazmanFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Define_BaseForm\SazmanFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="Splash_Form\SaveFrm.Designer.vb">
+      <DependentUpon>SaveFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Splash_Form\SaveFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mali_Form\WDate_fa_frm.Designer.vb">
+      <DependentUpon>WDate_fa_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mali_Form\WDate_fa_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Main_Form\AddPriceKarshenasi_frm.resx">
+      <DependentUpon>AddPriceKarshenasi_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Define_BaseForm\BankDefineFrm.resx">
+      <DependentUpon>BankDefineFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Define_BaseForm\DefKarbariFrm.resx">
+      <DependentUpon>DefKarbariFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Define_BaseForm\Pic_Viewer.resx">
+      <DependentUpon>Pic_Viewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Define_BaseForm\KarshenasanFrm.resx">
+      <DependentUpon>KarshenasanFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Define_BaseForm\VariziFrm.resx">
+      <DependentUpon>VariziFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form\Telphone_frm.resx">
+      <DependentUpon>Telphone_frm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mali_Form\Mali_frm.resx">
+      <DependentUpon>Mali_frm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mali_Form\Mali_Pay_frm.resx">
+      <DependentUpon>Mali_Pay_frm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mali_Form\Remain_Kar_frm.resx">
+      <DependentUpon>Remain_Kar_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Form\ListKarshenasiFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListKarshenasiFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form\MainFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form\KarshenasiFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KarshenasiFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Picture_Form\AddPictureFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddPictureFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Define_BaseForm\OstanAndShahBaseFrm.resx">
+      <DependentUpon>OstanAndShahBaseFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Picture_Form\PictureViewerFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PictureViewerFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Define_BaseForm\SazmanFrm.resx">
+      <DependentUpon>SazmanFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash_Form\SaveFrm.resx">
+      <DependentUpon>SaveFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mali_Form\WDate_fa_frm.resx">
+      <DependentUpon>WDate_fa_frm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\k1.JPG" />
+    <None Include="Resources\karshenasi1.JPG" />
+    <None Include="Resources\karshenasi.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ListKarshenasi.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ListKarshenasi1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ListKarshenasi2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ListKarshenasi3.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woman2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\op_sample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons_sample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ns_sample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woman21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woman3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woman1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arm.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VSTORuntime.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2010 Tools for Office Runtime %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\globe003.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\globe0031.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\globe004.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer001.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\globe001.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walkright_01.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vwbug-02-june.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fantasy-04-june.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="h1.ico" />
+    <None Include="Resources\Delete-file.ico" />
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-7-Save.ico" />
+    <None Include="Resources\Attach.ico" />
+    <None Include="Resources\Devices-scanner1.ico" />
+    <None Include="Resources\Printer1.ico" />
+    <None Include="Resources\Printer.ico" />
+    <None Include="Resources\Devices-scanner.ico" />
+    <None Include="Resources\Save.ico" />
+    <None Include="Resources\01.jpg" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\ListKarshenasi21.JPG" />
+    <None Include="Resources\ListKarshenasi11.JPG" />
+    <None Include="Resources\Karshenasan11.JPG" />
+    <None Include="Resources\Exit.bmp" />
+    <None Include="Resources\Test.bmp" />
+    <None Include="Resources\Repair.bmp" />
+    <None Include="Resources\pen tool.ico" />
+    <None Include="Resources\money bag.ico" />
+    <None Include="Resources\users.ico" />
+    <None Include="Resources\delete.ico" />
+    <None Include="Resources\SabtNazarKarshenasi1.JPG" />
+    <None Include="Resources\Karshenasan1.JPG" />
+    <None Include="Resources\ListKarshenasi5.JPG" />
+    <None Include="Resources\SabtNazarKarshenasi.JPG" />
+    <None Include="Resources\Karshenasan.JPG" />
+    <None Include="Resources\ListKarshenasi4.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

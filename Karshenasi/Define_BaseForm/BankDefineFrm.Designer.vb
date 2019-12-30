@@ -1,0 +1,104 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class BankDefineFrm
+    ' Inherits System.Windows.Forms.Form
+    Inherits Telerik.WinControls.RadForm
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container
+        Me.BankDataGrid = New System.Windows.Forms.DataGridView
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.BankBs = New System.Windows.Forms.BindingSource(Me.components)
+        Me.RadStatusStrip1 = New Telerik.WinControls.UI.RadStatusStrip
+        CType(Me.BankDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BankBs, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadStatusStrip1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'BankDataGrid
+        '
+        Me.BankDataGrid.AutoGenerateColumns = False
+        Me.BankDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.BankDataGrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column2})
+        Me.BankDataGrid.DataSource = Me.BankBs
+        Me.BankDataGrid.Location = New System.Drawing.Point(0, 0)
+        Me.BankDataGrid.Name = "BankDataGrid"
+        Me.BankDataGrid.RowTemplate.Height = 25
+        Me.BankDataGrid.Size = New System.Drawing.Size(247, 356)
+        Me.BankDataGrid.TabIndex = 0
+        '
+        'Column2
+        '
+        Me.Column2.DataPropertyName = "Bank"
+        Me.Column2.HeaderText = "نام بانک"
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 200
+        '
+        'RadStatusStrip1
+        '
+        Me.RadStatusStrip1.AutoSize = True
+        Me.RadStatusStrip1.LayoutStyle = Telerik.WinControls.UI.RadStatusBarLayoutStyle.Stack
+        Me.RadStatusStrip1.Location = New System.Drawing.Point(0, 332)
+        Me.RadStatusStrip1.Name = "RadStatusStrip1"
+        '
+        '
+        '
+        Me.RadStatusStrip1.RootElement.RightToLeft = True
+        Me.RadStatusStrip1.Size = New System.Drawing.Size(249, 28)
+        Me.RadStatusStrip1.SizingGrip = False
+        Me.RadStatusStrip1.TabIndex = 1
+        Me.RadStatusStrip1.Text = "RadStatusStrip1"
+        Me.RadStatusStrip1.ThemeName = "Office2007Black"
+        '
+        'BankDefineFrm
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(249, 360)
+        Me.Controls.Add(Me.RadStatusStrip1)
+        Me.Controls.Add(Me.BankDataGrid)
+        Me.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
+        Me.KeyPreview = True
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
+        Me.Name = "BankDefineFrm"
+        Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        '
+        '
+        '
+        Me.RootElement.RightToLeft = True
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "فرم تعریف بانکها"
+        Me.ThemeName = "Office2007Black"
+        CType(Me.BankDataGrid, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BankBs, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadStatusStrip1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents BankDataGrid As System.Windows.Forms.DataGridView
+    Friend WithEvents BankBs As System.Windows.Forms.BindingSource
+    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents RadStatusStrip1 As Telerik.WinControls.UI.RadStatusStrip
+End Class
